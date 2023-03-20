@@ -1,0 +1,67 @@
+.container {
+  padding: 50px;
+  display: flex;
+}
+
+.imgContainer {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.name {
+  font-weight: 525;
+  color: #d1411e;
+  font-size: 18px;
+}
+
+.total {
+  font-weight: 525;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 60%;
+  max-height: 200px;
+  background-color: #333;
+  padding: 40px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+.totalTextTitle {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.button {
+  height: 30px;
+  color: #d1411e;
+  font-weight: bold;
+  background-color: whitesmoke;
+  cursor: pointer;
+  margin-top: 20px;
+}
