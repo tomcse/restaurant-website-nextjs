@@ -27,7 +27,7 @@ const Cart = () => {
                 </div>
               </td>
               <td>
-                <span className={styles.name}>foodNAME</span>
+                <span className={styles.name}>Plant</span>
               </td>
               <td>
                 <span className={styles.extra}>
@@ -56,7 +56,7 @@ const Cart = () => {
                 </div>
               </td>
               <td>
-                <span className={styles.name}>foodNAME</span>
+                <span className={styles.name}>Plant2</span>
               </td>
               <td>
                 <span className={styles.extra}>
@@ -85,7 +85,7 @@ const Cart = () => {
                 </div>
               </td>
               <td>
-                <span className={styles.name}>foodNAME</span>
+                <span className={styles.name}>Plant3</span>
               </td>
               <td>
                 <span className={styles.extra}>
