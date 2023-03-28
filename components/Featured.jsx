@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const Featured = () => {
-  const images = ["/img/bird.png", "/img/plant.png", "/img/cat.png"];
+  const images = ["/img/monstera.png", "/img/peacelily.png", "/img/plant.png"];
 
   function test() {
     console.log("svbjufv");
@@ -30,11 +30,11 @@ const Featured = () => {
         onClick={() => handleArrow("l")}
       >
         <Image
-          src="/img/plant.png"
+          src="/img/navarrow.png"
           alt="arrow-left"
           fill
           sizes=""
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: "contain", transform: "rotate(180deg)"}}
         />
       </div>
       <div
@@ -53,7 +53,7 @@ const Featured = () => {
         onClick={() => handleArrow("r")}
       >
         <Image
-          src="/img/plant.png"
+          src="/img/navarrow.png"
           alt="arrow-right"
           fill
           style={{ objectFit: "contain" }}

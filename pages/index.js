@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Food Delivery Website</title>
+        <title>Buy plants NOW!</title>
         <meta name="description" content="For PowerUp Project" />
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <link rel="icon" href="/favicon.ico" />
