@@ -1,5 +1,5 @@
 const Vouchers = () => {
-    return (  );
-}
- 
+  return <div>vouchers</div>;
+};
+
 export default Vouchers;

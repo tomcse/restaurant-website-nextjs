@@ -3,20 +3,20 @@ import Image from "next/legacy/image";
 
 const Footer = () => (
   <div className={styles.container}>
-    <div className={styles.item}>
+    {/* <div className={styles.item}>
       <Image
-        src="/img/cat.png"
+        src="/img/logo.png"
         alt=""
         layout="fill"
         style={{ objectFit: "contain" }}
       />
-    </div>
+    </div> */}
     <div className={styles.item}>
       <div className={styles.card}>
-        <h2 className={styles.motto}>FILL IN A RANDOM MOTTO.</h2>
+        <h2 className={styles.motto}>Bringing life to your space, one plant at a time</h2>
       </div>
       <div className={styles.card}>
-        <h1 className={styles.title}>COME VISIT US AT</h1>
+        <h1 className={styles.title}>Visit us at</h1>
         <p className={styles.text}>
           63 Robinson Rd
           <br />
@@ -26,7 +26,7 @@ const Footer = () => (
         </p>
       </div>
       <div className={styles.card}>
-        <h1 className={styles.title}>WORKING HOURS</h1>
+        <h1 className={styles.title}>Opening hours</h1>
         <p className={styles.text}>
           MONDAY - FRIDAY
           <br />
