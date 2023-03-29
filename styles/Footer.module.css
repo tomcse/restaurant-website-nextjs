@@ -1,9 +1,6 @@
 .container {
-  height: calc(100vh-100px);
   background-color: darkslategrey;
   display: flex;
-  bottom: 0;
-  width: 100vw;
 }
 
 .item {
