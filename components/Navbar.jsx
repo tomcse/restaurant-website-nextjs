@@ -7,7 +7,9 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.logoButton}>
-          <Image src="/img/logo.png" alt="--" width="40" height="40" />
+          <Link href={"/"} style={{ textDecoration: "none", color: "white" }}>
+            <Image src="/img/logo.png" alt="--" width="40" height="40" />
+          </Link>
         </div>
         <div className={styles.texts}>
           <div className={styles.text}>ORDER NOW!</div>
@@ -16,9 +18,31 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Home page</li>
-          <li className={styles.listItem}>Products</li>
-          <li className={styles.listItem}>Menu</li>
+          <Link
+            href={"/"}
+            style={{ textDecoration: "none", color: "white" }}
+            scroll
+          >
+            <li className={styles.listItem}>Home</li>
+          </Link>
+          <Link
+            href={"/#products"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <li className={styles.listItem}>Products</li>
+          </Link>
+          <Link
+            href={"/voucher"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <li className={styles.listItem}>Vouchers</li>
+          </Link>
+          <Link
+            href={"#contact"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <li className={styles.listItem}>Contact</li>
+          </Link>
           {/* <Image src="/img/logo.png" alt="--" width="100" height="69" /> */}
           {/* <li className={styles.listItem}>Events</li>
           <li className={styles.listItem}>Blog</li>
@@ -26,10 +50,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.item}>
-        <div className={styles.cart}>
-          <Image src="/img/logo.png" alt="--" width="30" height="30" />
-          <div className={styles.counter}>2</div>
-        </div>
+        <Link href={"/cart"} style={{ textDecoration: "none", color: "white" }}>
+          <div className={styles.cart}>
+            <Image src="/img/logo.png" alt="--" width="45" height="45" />
+            <div className={styles.counter}>2</div>
+          </div>
+        </Link>
       </div>
     </div>
   );

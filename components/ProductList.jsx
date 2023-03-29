@@ -4,7 +4,9 @@ import ProductCard from "./ProductCard";
 const ProductList = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Available Products</h1>
+      <h1 className={styles.title} id="products">
+        Available Products
+      </h1>
       {/* <p className={styles.desc}>Brief description of products.</p> */}
       <div className={styles.wrapper}>
         <ProductCard

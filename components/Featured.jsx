@@ -34,7 +34,7 @@ const Featured = () => {
           alt="arrow-left"
           fill
           sizes=""
-          style={{ objectFit: "contain", transform: "rotate(180deg)"}}
+          style={{ objectFit: "contain", transform: "rotate(180deg)" }}
         />
       </div>
       <div

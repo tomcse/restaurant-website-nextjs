@@ -13,10 +13,15 @@ const Footer = () => (
     </div> */}
     <div className={styles.item}>
       <div className={styles.card}>
-        <h2 className={styles.motto}>Bringing life to your space, one plant at a time</h2>
+        <h2 className={styles.motto} style={{ fontSize: "30px" }}>
+          Bringing life to your space, <br />
+          One plant at a time
+        </h2>
       </div>
       <div className={styles.card}>
-        <h1 className={styles.title}>Visit us at</h1>
+        <h1 className={styles.title} id="contact">
+          Visit us at
+        </h1>
         <p className={styles.text}>
           63 Robinson Rd
           <br />

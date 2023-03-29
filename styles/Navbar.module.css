@@ -70,8 +70,8 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: white;
   padding: 3px;
@@ -80,4 +80,8 @@
   justify-content: center;
   font-weight: bold;
   color: #d1411e;
+}
+
+#products {
+  scroll-margin-top: 100px;
 }

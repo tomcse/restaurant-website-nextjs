@@ -18,3 +18,13 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.title {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-size: 55px;
+}
+
+#products {
+  scroll-margin-top: 100px;
+}
