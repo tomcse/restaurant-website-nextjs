@@ -13,7 +13,7 @@ const Footer = () => (
     </div> */}
     <div className={styles.item}>
       <div className={styles.card}>
-        <h2 className={styles.motto} style={{ fontSize: "30px" }}>
+        <h2 className={styles.motto}>
           Bringing life to your space, <br />
           One plant at a time
         </h2>
