@@ -2,11 +2,12 @@
   height: calc(100vh-100px);
   background-color: darkslategrey;
   display: flex;
+  bottom: 0;
+  width: 100vw;
 }
 
 .item {
   flex: 1;
-  position: relative;
   display: flex;
   padding: 50px;
 }
@@ -16,13 +17,21 @@
   text-align: center;
 }
 
+.card:first-child {
+  flex: 2;
+  text-align: left;
+  padding-left: 150px;
+}
+
 .title {
   font-size: 18px;
   color: #b7903c;
+  margin-bottom: 5px;
 }
 
 .text {
   color: lightgray;
+  margin-bottom: 5px;
 }
 
 .motto {
