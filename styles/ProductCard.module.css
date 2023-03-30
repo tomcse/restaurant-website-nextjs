@@ -24,6 +24,8 @@
   font-size: 18px;
   font-weight: bold;
   color: #d1411e;
+  width: 500px;
+  margin-top: 10px;
 }
 
 .price {
@@ -35,4 +37,5 @@
 .desc {
   text-align: center;
   color: #777;
+  width: 200px;
 }

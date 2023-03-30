@@ -80,24 +80,28 @@ const Voucher = () => {
             type="text"
             name="title"
             placeholder="Title"
+            required
           />
           <input
             className={styles.input}
             type="text"
             name="description"
             placeholder="Description"
+            required
           />
           <input
             className={styles.input}
             type="number"
             name="discount"
             placeholder="Discount ($)"
+            required
           />
           <input
             className={styles.input}
             type="text"
             name="id"
             placeholder="ID"
+            required
           />
           <button className={styles.btn} type="submit">
             Add Voucher
