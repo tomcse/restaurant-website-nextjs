@@ -51,7 +51,10 @@ const Voucher = () => {
                   <td className={styles.data}>{voucher.Description}</td>
                   <td className={styles.data}>{voucher.Discount}</td>
                   <td>
-                    <button onClick={() => deleteVoucher(voucher.id)}>
+                    <button
+                      className={styles.delete}
+                      onClick={() => deleteVoucher(voucher.id)}
+                    >
                       Delete
                     </button>
                   </td>
