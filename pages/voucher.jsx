@@ -4,29 +4,30 @@ import { useEffect, useState } from "react";
 
 const Voucher = () => {
   const [vouchers, setVouchers] = useState([]);
+  const sheetDb = axios.create({
+    baseURL: "https://sheetdb.io/api/v1/rvd5xqes70tr0",
+    timeout: 10000,
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+  });
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        "https://sheetdb.io/api/v1/rvd5xqes70tr0"
-      );
+      const response = await sheetDb.get();
       setVouchers(response.data);
     };
     fetchData();
   }, []);
 
   const addVoucher = async (voucher) => {
-    const response = await axios.post(
-      "https://sheetdb.io/api/v1/rvd5xqes70tr0",
-      { data: voucher }
-    );
+    const response = await sheetDb.post("", { data: voucher });
     setVouchers((prevVouchers) => [...prevVouchers, response.data]);
   };
 
   const deleteVoucher = async (id) => {
-    const response = await axios.delete(
-      `https://sheetdb.io/api/v1/rvd5xqes70tr0/id/${id}`
-    );
+    const response = await sheetDb.delete(`/id/${id}`);
     setVouchers((prevVouchers) =>
       prevVouchers.filter((voucher) => voucher.id !== id)
     );
@@ -42,18 +43,21 @@ const Voucher = () => {
               <th>Description</th>
               <th>Discount</th>
             </tr>
-            {vouchers.map((voucher) => (
-              <tr key={voucher.id}>
-                <td className={styles.data}>{voucher.Title}</td>
-                <td className={styles.data}>{voucher.Description}</td>
-                <td className={styles.data}>{voucher.Discount}</td>
-                <td>
-                  <button onClick={() => deleteVoucher(voucher.id)}>
-                    Delete
-                  </button>
-                </td>
-              </tr>
-            ))}
+            {vouchers.map((voucher) => {
+              console.log(voucher.id);
+              return (
+                <tr key={voucher.id}>
+                  <td className={styles.data}>{voucher.Title}</td>
+                  <td className={styles.data}>{voucher.Description}</td>
+                  <td className={styles.data}>{voucher.Discount}</td>
+                  <td>
+                    <button onClick={() => deleteVoucher(voucher.id)}>
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
