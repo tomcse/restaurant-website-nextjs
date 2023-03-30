@@ -53,7 +53,7 @@ const Navbar = () => {
         <Link href={"/cart"} style={{ textDecoration: "none", color: "white" }}>
           <div className={styles.cart}>
             <Image src="/img/cart.png" alt="--" width="35" height="35" />
-            <div className={styles.counter}>2</div>
+            <div className={styles.counter}>3</div>
           </div>
         </Link>
       </div>

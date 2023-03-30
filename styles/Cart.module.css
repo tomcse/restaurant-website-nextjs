@@ -1,6 +1,7 @@
 .container {
   padding: 50px;
   display: flex;
+  height: 60vh;
 }
 
 .imgContainer {
